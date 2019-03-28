@@ -8,6 +8,11 @@ namespace lesson_1
 {
     class AutoMorph
     {
+        /// <summary>
+        /// Метод определяет длинну числа
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         static ulong NumLength(ulong num)
         {
             ulong c = 1;
@@ -19,6 +24,10 @@ namespace lesson_1
             return c;
         }
         
+        /// <summary>
+        /// Метод определяет является ли число автоморфным
+        /// </summary>
+        /// <param name="num"></param>
         public void IsAutomorph(ulong num)
         {
             for (ulong i = 1; i < num;)
@@ -28,7 +37,8 @@ namespace lesson_1
                     Console.Write($"{i} ");
                 }
                 i++; num--;
-            }            
+            }
+            Console.Write("\n");
         }
     }
 }

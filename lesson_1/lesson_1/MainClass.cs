@@ -46,11 +46,11 @@ namespace lesson_1
     {
         static void Main(string[] args)
         {
-            #region 14. * Автоморфные числа. 
-            /*Какой тип позволит использовать число длиннее улонга???*/
+            #region 14. * Автоморфные числа.             
+
             AutoMorph am = new AutoMorph();
             Console.WriteLine("Введите число:");
-            ulong num = ulong.Parse(Console.ReadLine());
+            ulong num = ulong.Parse(Console.ReadLine()); //почему не дает использовать длинные числа?        
             am.IsAutomorph(num);
 
             Console.ReadKey();
@@ -66,6 +66,14 @@ namespace lesson_1
             #endregion
 
             #region 12. Написать функцию нахождения максимального из трёх чисел.
+            MaxNumber mNuber = new MaxNumber();
+            Console.WriteLine("Enter three numbres:");
+            int q = MaxNumber.SandBox();
+            Console.WriteLine(q);
+            Console.ReadLine();
+            #endregion
+
+            #region 11. С клавиатуры вводятся числа, пока не будет введён 0. Подсчитать среднее арифметическое всех положительных чётных чисел, оканчивающихся на 8.
 
             #endregion
         }
