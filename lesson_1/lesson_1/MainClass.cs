@@ -74,7 +74,10 @@ namespace lesson_1
             #endregion
 
             #region 11. С клавиатуры вводятся числа, пока не будет введён 0. Подсчитать среднее арифметическое всех положительных чётных чисел, оканчивающихся на 8.
-
+            AverageNumbers avNum = new AverageNumbers();
+            double e = AverageNumbers.Average();
+            Console.WriteLine(e);
+            Console.ReadLine();
             #endregion
         }
     }
