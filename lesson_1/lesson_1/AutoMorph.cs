@@ -10,32 +10,25 @@ namespace lesson_1
     {
         static ulong NumLength(ulong num)
         {
-            ulong c = 0;
+            ulong c = 1;
             while (num > 0)
             {
-                c++;
+                c*=10;
                 num /= 10;
             }
             return c;
         }
-        //public void IsAutomorph1(ulong num)
-        //{
-        //    if ((num * num) % (NumLength(num) * 10) == num)
-        //    {
-        //        Console.WriteLine($"num");
-        //    }
-        //}
-        public void IsAutomorph2(ulong num)
+        
+        public void IsAutomorph(ulong num)
         {
-            for (ulong i = 0; i < num; i++)
+            for (ulong i = 1; i < num;)
             {
-                if (i * i % (NumLength(num) * 10) == num)
+                if (i * i % NumLength(i) == i)
                 {
-                    Console.Write($"{num} ");
+                    Console.Write($"{i} ");
                 }
-            }
-            
+                i++; num--;
+            }            
         }
-
     }
 }
