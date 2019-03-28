@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AutoMorph.cs" />
     <Compile Include="AverageNumbers.cs" />
+    <Compile Include="EvenOdd.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="MaxNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

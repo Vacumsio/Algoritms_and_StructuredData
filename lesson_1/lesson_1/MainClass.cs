@@ -46,37 +46,43 @@ namespace lesson_1
     {
         static void Main(string[] args)
         {
-            #region 14. * Автоморфные числа.             
+            //#region 14. * Автоморфные числа.             
 
-            AutoMorph am = new AutoMorph();
-            Console.WriteLine("Введите число:");
-            ulong num = ulong.Parse(Console.ReadLine()); //почему не дает использовать длинные числа?        
-            am.IsAutomorph(num);
+            //AutoMorph am = new AutoMorph();
+            //Console.WriteLine("Введите число:");
+            //ulong num = ulong.Parse(Console.ReadLine()); //почему не дает использовать длинные числа?        
+            //am.IsAutomorph(num);
 
-            Console.ReadKey();
-            #endregion
+            //Console.ReadKey();
+            //#endregion
 
-            #region 13. * Написать функцию, генерирующую случайное число от 1 до 100: 
+            //#region 13. * Написать функцию, генерирующую случайное число от 1 до 100: 
 
-            int x = Randomizer.Randomize(); //func Random
-            Console.WriteLine(x);
-            int w = Randomizer.RandomizeHandler(); // Randomization with Date
-            Console.WriteLine(w);
-            Console.ReadKey();
-            #endregion
+            //int x = Randomizer.Randomize(); //func Random
+            //Console.WriteLine(x);
+            //int w = Randomizer.RandomizeHandler(); // Randomization with Date
+            //Console.WriteLine(w);
+            //Console.ReadKey();
+            //#endregion
 
-            #region 12. Написать функцию нахождения максимального из трёх чисел.
-            MaxNumber mNuber = new MaxNumber();
-            Console.WriteLine("Enter three numbres:");
-            int q = MaxNumber.SandBox();
-            Console.WriteLine(q);
-            Console.ReadLine();
-            #endregion
+            //#region 12. Написать функцию нахождения максимального из трёх чисел.
+            //MaxNumber mNuber = new MaxNumber();
+            //Console.WriteLine("Enter three numbres:");
+            //int q = MaxNumber.SandBox();
+            //Console.WriteLine(q);
+            //Console.ReadLine();
+            //#endregion
 
-            #region 11. С клавиатуры вводятся числа, пока не будет введён 0. Подсчитать среднее арифметическое всех положительных чётных чисел, оканчивающихся на 8.
-            AverageNumbers avNum = new AverageNumbers();
-            double e = AverageNumbers.Average();
-            Console.WriteLine(e);
+            //#region 11. С клавиатуры вводятся числа, пока не будет введён 0. Подсчитать среднее арифметическое всех положительных чётных чисел, оканчивающихся на 8.
+            //AverageNumbers avNum = new AverageNumbers();
+            //double e = AverageNumbers.Average();
+            //Console.WriteLine(e);
+            //Console.ReadLine();
+            //#endregion
+
+            #region 10. Дано целое число N > 0. С помощью операций деления нацело и взятия остатка от деления определить, имеются ли в записи числа N нечётные цифры. Если имеются, то вывести True, если нет – вывести False.
+            
+            Console.WriteLine(EvenOdd.IfNumber());
             Console.ReadLine();
             #endregion
         }
