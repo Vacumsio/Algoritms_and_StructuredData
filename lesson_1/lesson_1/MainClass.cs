@@ -46,22 +46,23 @@ namespace lesson_1
     {
         static void Main(string[] args)
         {
-            #region 14. * Автоморфные числа.
-            //AutoMorph am = new AutoMorph();
-            //Console.WriteLine("Введите число:");
-            //ulong num = ulong.Parse(Console.ReadLine());
-            //am.IsAutomorph(num);
+            #region 14. * Автоморфные числа. 
+            /*Какой тип позволит использовать число длиннее улонга???*/
+            AutoMorph am = new AutoMorph();
+            Console.WriteLine("Введите число:");
+            ulong num = ulong.Parse(Console.ReadLine());
+            am.IsAutomorph(num);
 
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
 
             #region 13. * Написать функцию, генерирующую случайное число от 1 до 100: 
 
-            //int x = Randomizer.Randomize(); //func Random
-            //Console.WriteLine(x);
-            //int w = Randomizer.RandomizeHandler(); // Randomization with Date
-            //Console.WriteLine(w);
-            //Console.ReadKey();
+            int x = Randomizer.Randomize(); //func Random
+            Console.WriteLine(x);
+            int w = Randomizer.RandomizeHandler(); // Randomization with Date
+            Console.WriteLine(w);
+            Console.ReadKey();
             #endregion
 
             #region 12. Написать функцию нахождения максимального из трёх чисел.
