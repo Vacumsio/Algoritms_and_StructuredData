@@ -22,6 +22,7 @@ namespace lesson_2
     {
         static void Main(string[] args)
         {
+            #region 1.Реализовать функцию перевода чисел из десятичной системы в двоичную, используя рекурсию.
             int num = 0;
             ChangeNumber ob = new ChangeNumber();
             Console.Write("Введите число: ");
@@ -29,10 +30,18 @@ namespace lesson_2
             string s = ChangeNumber.IntToBin(num);
             Console.WriteLine("Ваше число в двоичной системе: {0}", s);
             Console.ReadKey();
+            #endregion
+
+            #region 2.Реализовать функцию возведения числа a в степень b:
             NumPaw pw = new NumPaw();
             double q = pw.Paw();
-            Console.WriteLine("Ваше число {0}",q);
+            Console.WriteLine("Ваше число {0}", q);
             Console.ReadKey();
+            #endregion
+
+            #region 3. Исполнитель «Калькулятор» преобразует целое число, записанное на экране. У исполнителя две команды, каждой присвоен номер: 
+
+            #endregion
         }
     }
 }
