@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C14FE7E0-8525-4BFE-8276-72B900692CD9}</ProjectGuid>
+    <ProjectGuid>{B3659C0F-67B8-465C-A334-DF12F66B8408}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>lesson_1</RootNamespace>
-    <AssemblyName>lesson_1</AssemblyName>
+    <RootNamespace>lesson_2</RootNamespace>
+    <AssemblyName>lesson_2</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMorph.cs" />
-    <Compile Include="AverageNumbers.cs" />
-    <Compile Include="EvenOdd.cs" />
-    <Compile Include="MainClass.cs" />
-    <Compile Include="MaxNumber.cs" />
-    <Compile Include="PawNN.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Random.cs" />
-    <Compile Include="SubSumm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
