@@ -26,8 +26,12 @@ namespace lesson_2
             ChangeNumber ob = new ChangeNumber();
             Console.Write("Введите число: ");
             num = Convert.ToInt32(Console.ReadLine());
-            string s  = ChangeNumber.IntToBin(num);
+            string s = ChangeNumber.IntToBin(num);
             Console.WriteLine("Ваше число в двоичной системе: {0}", s);
+            Console.ReadKey();
+            NumPaw pw = new NumPaw();
+            double q = pw.Paw();
+            Console.WriteLine("Ваше число {0}",q);
             Console.ReadKey();
         }
     }

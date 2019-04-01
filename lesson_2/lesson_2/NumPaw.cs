@@ -18,6 +18,7 @@ namespace lesson_2
             while (w!=a)
             {
                 x *= x;
+                w++;
             }
             return x;
         }
