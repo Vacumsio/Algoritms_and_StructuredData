@@ -9,17 +9,9 @@ namespace lesson_2
     class ChangeNumber
     {
 
-        public string bin;
-        public void Per(int i)
+        public static String IntToBin(int init)
         {
-            if (i > 0)
-            {
-                if (i % 2 == 1)
-                    bin += "1";
-                else
-                    bin += "0";
-                Per(i / 2);
-            }
+            return (init == 0) ? String.Empty : IntToBin(init / 2) + ((init % 2 == 0) ? "0" : "1");
         }
     }
 }

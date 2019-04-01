@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ChangeNumber.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="NumPaw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

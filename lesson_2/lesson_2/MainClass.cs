@@ -22,12 +22,12 @@ namespace lesson_2
     {
         static void Main(string[] args)
         {
-            int num;
+            int num = 0;
             ChangeNumber ob = new ChangeNumber();
             Console.Write("Введите число: ");
             num = Convert.ToInt32(Console.ReadLine());
-            ob.Per(num);
-            Console.WriteLine("Ваше число в двоичной системе: {0}", ob.bin);
+            string s  = ChangeNumber.IntToBin(num);
+            Console.WriteLine("Ваше число в двоичной системе: {0}", s);
             Console.ReadKey();
         }
     }
