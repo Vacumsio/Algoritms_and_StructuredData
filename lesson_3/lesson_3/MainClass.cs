@@ -31,12 +31,17 @@ namespace lesson_3
             Console.ReadKey();
 
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
-            BubbleSort.Bubbles(array);
+            Console.WriteLine("BubbleSort\n");
+            Sorts.Bubbles(array);
+            Console.WriteLine("\n");
             Console.ReadKey();
             #endregion
 
             #region  2. *Реализовать шейкерную сортировку.
-
+            Console.WriteLine("SheikersSort\n");
+            //Sorts.Sheikers(array);
+            Console.WriteLine("\n");
+            Console.ReadKey();
             #endregion
 
             #region 3. Реализовать бинарный алгоритм поиска в виде функции, которой передаётся отсортированный массив.
