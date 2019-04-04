@@ -23,7 +23,7 @@ namespace lesson_3
             for (int i = 0; i < arr.Length; i++)
             {
                 f = 0;
-                for (int j = 0; j < arr.Length-1; j++)
+                for (int j = i; j < arr.Length-1; j++)  // j=i == продолжает сортировку неотсортированного
                 {
                     if (arr[j]>arr[j+1])
                     {                        
