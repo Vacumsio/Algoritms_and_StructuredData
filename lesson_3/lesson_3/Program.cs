@@ -18,13 +18,15 @@ namespace lesson_3
     {
         static void Main(string[] args)
         {
-            int[] array = CreateArray();
-
+            Console.WriteLine("Enter size of your array");
+            DateTime date = DateTime.Now;
+            long[] array = CreateArray();
+            Console.WriteLine(date - DateTime.Now);
             //foreach (var item in array)
-            //{
-            //    Console.WriteLine(item);
+            //{                
+            //    Console.WriteLine(item);                
             //}
-
+            
             Console.ReadKey();
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
 
@@ -43,16 +45,18 @@ namespace lesson_3
             #endregion
         }
 
-        private static int[] CreateArray()
-        {
-            int z = 0;
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = new int[n];
+        private static long[] CreateArray()
+        {            
+            long n = long.Parse(Console.ReadLine());
+            Console.WriteLine("Size of array {0}\n",n);
+            long[] arr = new long[n];
             Random rand = new Random();
+            
             for (int i = 0; i < n; i++)
             {
-                arr[i] = rand.Next(z,n);
+                arr[i] = rand.Next(0,10);
             }
+            
             return arr;
         }
     }
