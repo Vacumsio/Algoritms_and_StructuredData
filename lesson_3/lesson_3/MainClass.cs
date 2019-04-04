@@ -32,14 +32,14 @@ namespace lesson_3
 
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
             Console.WriteLine("BubbleSort\n");
-            Sorts.Bubbles(array);
+            int[] bubbles = Sorts.Bubbles(array);
             Console.WriteLine("\n");
             Console.ReadKey();
             #endregion
 
             #region  2. *Реализовать шейкерную сортировку.
             Console.WriteLine("SheikersSort\n");
-            //Sorts.Sheikers(array);
+            int[] sheikers = Sorts.Sheikers(array);
             Console.WriteLine("\n");
             Console.ReadKey();
             #endregion
