@@ -21,7 +21,7 @@ namespace lesson_3
             Console.WriteLine("Enter size of your array");
             DateTime date = DateTime.Now;
             int[] array = NewArray.CreateArray();
-            Console.WriteLine("Время создания массива составляет: {0}", date - DateTime.Now);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
 
             //foreach (var item in array)
             //{                
@@ -31,15 +31,19 @@ namespace lesson_3
             Console.ReadKey();
 
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
-            Console.WriteLine("BubbleSort\n");
+            Console.WriteLine("BubbleSort");
+            date = DateTime.Now;
             int[] bubbles = Sorts.Bubbles(array);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
             Console.ReadKey();
             #endregion
 
             #region  2. *Реализовать шейкерную сортировку.
-            Console.WriteLine("SheikersSort\n");
+            Console.WriteLine("SheikersSort");
+            date = DateTime.Now;
             int[] sheikers = Sorts.Sheikers(array);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
             Console.ReadKey();
             #endregion

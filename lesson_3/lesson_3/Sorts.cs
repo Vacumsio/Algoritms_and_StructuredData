@@ -30,10 +30,10 @@ namespace lesson_3
                     break;
                 }
             }
-            foreach (var item in arr)
-            {
-                Console.Write("{0} ", item);
-            }
+            //foreach (var item in arr)
+            //{
+            //    Console.Write("{0} ", item);
+            //}
             return arr;
         }
 
@@ -52,13 +52,17 @@ namespace lesson_3
                 }
                 Swap(ref arr[i], ref arr[min]);
             }
-            foreach (var item in arr)
-            {
-                Console.Write("{0} ", item);
-            }
+            //foreach (var item in arr)
+            //{
+            //    Console.Write("{0} ", item);
+            //}
             return arr;
         }
 
+        public static int[] Binary(int[] arr)
+        {
+            return arr;
+        }
 
     }
 }
