@@ -14,22 +14,25 @@ using System.Threading.Tasks;
 */
 namespace lesson_3
 {
-    class Program
+    class MainClass
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Enter size of your array");
             DateTime date = DateTime.Now;
-            long[] array = CreateArray();
-            Console.WriteLine(date - DateTime.Now);
+            int[] array = NewArray.CreateArray();
+            Console.WriteLine("Время создания массива составляет: {0}", date - DateTime.Now);
+
             //foreach (var item in array)
             //{                
             //    Console.WriteLine(item);                
             //}
             
             Console.ReadKey();
-            #region 1. Попробовать оптимизировать пузырьковую сортировку.
 
+            #region 1. Попробовать оптимизировать пузырьковую сортировку.
+            BubbleSort.Bubbles(array);
+            Console.ReadKey();
             #endregion
 
             #region  2. *Реализовать шейкерную сортировку.
@@ -45,19 +48,6 @@ namespace lesson_3
             #endregion
         }
 
-        private static long[] CreateArray()
-        {            
-            long n = long.Parse(Console.ReadLine());
-            Console.WriteLine("Size of array {0}\n",n);
-            long[] arr = new long[n];
-            Random rand = new Random();
-            
-            for (int i = 0; i < n; i++)
-            {
-                arr[i] = rand.Next(0,10);
-            }
-            
-            return arr;
-        }
+        
     }
 }
