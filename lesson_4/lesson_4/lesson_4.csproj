@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4A3C7C9-126D-4D26-98B5-BB315E112C4D}</ProjectGuid>
+    <ProjectGuid>{304FEA52-A4D2-46B6-B961-614AD18B8186}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>lesson_3</RootNamespace>
-    <AssemblyName>lesson_3</AssemblyName>
+    <RootNamespace>lesson_4</RootNamespace>
+    <AssemblyName>lesson_4</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainClass.cs" />
-    <Compile Include="NewArray.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sorts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
