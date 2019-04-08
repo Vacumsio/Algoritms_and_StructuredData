@@ -27,6 +27,7 @@ namespace lesson_4
             cw.ReadMap();
             cw.DrawMap();
             
+
         }
     }
 }
