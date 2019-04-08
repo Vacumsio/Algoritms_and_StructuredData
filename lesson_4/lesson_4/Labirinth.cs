@@ -8,10 +8,11 @@ namespace lesson_4
 {
     class Labirinth
     {
+        static Random rand = new Random();
+        const int n = 10, m = 10;
+
         public static void CreateMap()
-        {
-            Random rand = new Random();
-            const int n = 10, m = 10;
+        {                        
             int[,] massiv = new int[m, n];
 
             for (int i = 0; i < n; ++i)
