@@ -23,11 +23,11 @@ namespace lesson_4
     {
         static void Main(string[] args)
         {
-            StarMatrix cw = new StarMatrix();
-            cw.ReadMap();
-            cw.DrawMap();
-            
-
+            //StarMatrix cw = new StarMatrix();
+            //cw.ReadMap();
+            //cw.DrawMap();
+            Labirinth.CreateMap();
+            Console.ReadKey();
         }
     }
 }

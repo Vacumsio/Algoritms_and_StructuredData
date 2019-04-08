@@ -8,21 +8,19 @@ namespace lesson_4
 {
     class Labirinth
     {
-        Random rand = new Random();
-
-        int n = 10;
-        int[,] Map = new int[10, 10];
-
-        int[,] WayMap;
-
-        public void CreateMap()
+        public static void CreateMap()
         {
-            for (int i = 0; i < MapWidht; i++)
-            {
-                
-                for (int j = 0; j < MapHeight; j++)
-                {
+            Random rand = new Random();
+            const int n = 10, m = 10;
+            int[,] massiv = new int[m, n];
 
+            for (int i = 0; i < n; ++i)
+            {
+                Console.WriteLine();
+                for (int j = 0; j < m; ++j)
+                {
+                    massiv[i, j] = rand.Next(0, 2);
+                    Console.Write(" " + massiv[i, j] + " ");
                 }
             }
         }
