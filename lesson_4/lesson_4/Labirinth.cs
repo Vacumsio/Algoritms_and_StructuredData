@@ -7,23 +7,42 @@ using System.Threading.Tasks;
 namespace lesson_4
 {
     class Labirinth
-    {
-        static Random rand = new Random();
+    {        
         const int n = 10, m = 10;
+        
+        public static void Print(int n, int m, int[,]arr)
+        {
+            int i, j;
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < m; j++)
+                {
+                    Console.Write("{0,6}",arr[i,j]);
+                }
+                Console.WriteLine();
+            }
+        }
 
         public static void CreateMap()
-        {                        
-            int[,] massiv = new int[m, n];
+        {                      
+            
+            int[,] arr = new int[n,m];
+            int i, j;
 
-            for (int i = 0; i < n; ++i)
+            for (j = 0; j < m; j++)
             {
-                Console.WriteLine();
-                for (int j = 0; j < m; ++j)
+                arr[0, j] = 1;
+            }
+            
+            for (i = 1; i < n; i++)
+            {
+                arr[i, 0] = 1;
+                for (j = 1; j < m; j++)
                 {
-                    massiv[i, j] = rand.Next(0, 2);
-                    Console.Write(" " + massiv[i, j] + " ");
+                    arr[i, j] = arr[i, j - 1] + arr[i - 1, j];
                 }
             }
+            Print(n,m,arr);
         }
     }
 }
