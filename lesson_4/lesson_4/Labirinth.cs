@@ -8,7 +8,7 @@ namespace lesson_4
 {
     class Labirinth
     {        
-        const int n = 10, m = 10;
+        const int n = 9, m = 9;
         
         public static void Print(int n, int m, int[,]arr)
         {
