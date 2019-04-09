@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Labirinth.cs" />
+    <Compile Include="AllRoutes.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subsequence.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

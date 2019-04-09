@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lesson_4
 {
-    class Labirinth
+    class AllRoutes
     {
         const int n = 9, m = 9;
 
@@ -54,7 +54,7 @@ namespace lesson_4
         }
 
         /// <summary>
-        /// 
+        /// Метод подсчета - Количество маршрутов c препятствиями
         /// </summary>
         public static void RoutesFarFar()
         {

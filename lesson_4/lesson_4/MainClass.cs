@@ -25,18 +25,23 @@ namespace lesson_4
         {
             #region *Количество маршрутов с препятствиями. Реализовать чтение массива с препятствием и нахождение количество маршрутов.
             Console.WriteLine("Количество маршрутов Шахматного короля до H8, без препятствий\n");
-            Labirinth.Routes();
+            AllRoutes.Routes();
 
             Console.WriteLine();
             Console.ReadKey();
 
             Console.WriteLine("Количество маршрутов Шахматного короля до H8, с препятствиями\n");
-            Labirinth.RoutesFarFar();
+            AllRoutes.RoutesFarFar();
+            Console.ReadKey();
+
+            Console.WriteLine();
             #endregion
 
             #region 2. Решить задачу о нахождении длины максимальной подпоследовательности с помощью матрицы.
-
+            Console.WriteLine("Максимальная подпоследовательность с помощью матрицы\n");
+            Subsequence.Sequence();
             #endregion
+
             Console.ReadKey();
         }
     }
