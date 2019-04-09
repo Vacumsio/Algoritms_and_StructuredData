@@ -34,6 +34,9 @@ namespace lesson_4
             Labirinth.RoutesFarFar();
             #endregion
 
+            #region 2. Решить задачу о нахождении длины максимальной подпоследовательности с помощью матрицы.
+
+            #endregion
             Console.ReadKey();
         }
     }
