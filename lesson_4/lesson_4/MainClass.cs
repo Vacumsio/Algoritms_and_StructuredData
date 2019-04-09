@@ -23,10 +23,17 @@ namespace lesson_4
     {
         static void Main(string[] args)
         {
-            //StarMatrix cw = new StarMatrix();
-            //cw.ReadMap();
-            //cw.DrawMap();
-            Labirinth.CreateMap();
+            #region *Количество маршрутов с препятствиями. Реализовать чтение массива с препятствием и нахождение количество маршрутов.
+            Console.WriteLine("Количество маршрутов Шахматного короля до H8, без препятствий\n");
+            Labirinth.Routes();
+
+            Console.WriteLine();
+            Console.ReadKey();
+
+            Console.WriteLine("Количество маршрутов Шахматного короля до H8, с препятствиями\n");
+            Labirinth.RoutesFarFar();
+            #endregion
+
             Console.ReadKey();
         }
     }
