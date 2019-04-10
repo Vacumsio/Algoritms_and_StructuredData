@@ -43,7 +43,7 @@ namespace lesson_4
             #endregion
 
             #region 3. Требуется обойти конём шахматную доску размером N × M, пройдя через все поля доски по одному разу. 
-
+            Console.WriteLine();
             #endregion
             Console.ReadKey();
         }
