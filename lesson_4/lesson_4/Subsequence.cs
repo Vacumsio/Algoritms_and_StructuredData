@@ -8,13 +8,52 @@ namespace lesson_4
 {
     class Subsequence
     {
-        const int n = 11, m = 11;
+        const int n = 11, m = 11; //константы размероности массива
 
+        /// <summary>
+        /// Метод вывода подпоследовательности с помощью функции Фор
+        /// </summary>
+        /// <param name="a">двумерный Массив</param>
+        public static void PrintFor(int[,] a)
+        {
+            int i, j;
+            for (i = 0; i <= n; i++)
+            {
+                for (j = 0; j <= m; j++)
+                {
+                    Console.Write("{0,3}", a[i, j]);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// Метод вывода подпоследовательности с помощью форыч
+        /// </summary>
+        /// <param name="a">двумерный Массив</param>
+        public static void PrintForeach(int[,] a)
+        {
+            foreach (var w in Enumerable.Range(0, a.GetLength(0)))
+            {
+                foreach (var x in Enumerable.Range(0, a.GetLength(0)))
+                {
+                    Console.Write("{0,3}", a[w, x]);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// Метод для поиска наибольшей подпоследовательности
+        /// </summary>
         public static void Sequence()
         {
-            int [,] fstSeq = {
-                {' ',' ','S','T','A','R','T','R','A','C','K'},
-                {' ',0,0,0,0,0,0,0,0,0,0},
+            int i, j;
+
+            //массив = оюект поиска
+            int[,] fstSeq = {
+                {' ','-','S','T','A','R','T','R','A','C','K'},
+                {'+',0,0,0,0,0,0,0,0,0,0},
                 {'S',0,0,0,0,0,0,0,0,0,0},
                 {'P',0,0,0,0,0,0,0,0,0,0},
                 {'O',0,0,0,0,0,0,0,0,0,0},
@@ -26,14 +65,39 @@ namespace lesson_4
                 {'E',0,0,0,0,0,0,0,0,0,0},
             };
 
-            for (int i = 0; i < n; i++)
+            //алгоритм поиска
+            for (i = 1; i < n; i++)
             {
-                for (int j = 0; j < m; j++)
+                for (j = 1; j < m; j++)
                 {
-                    Console.Write("{0,3}", fstSeq[i, j]);
+                    if (fstSeq[i, j] == n)
+                    {
+                        fstSeq[i, j] = 0;
+                    }
+
+                    else if (fstSeq[i, 0] == fstSeq[0, j])
+                    {
+                        fstSeq[i, j] = 1 + fstSeq[i + 1, j + 1];
+                    }
+
+                    else if (fstSeq[i + 1, j] > fstSeq[i, j + 1])
+                    {
+                        fstSeq[i, j] = fstSeq[i + 1, j];
+                    }
+
+                    else
+                    {
+                        fstSeq[i, j] = fstSeq[i, j + 1];
+                    }
                 }
-                Console.WriteLine();
             }
+
+            Console.WriteLine();
+            PrintFor(fstSeq);
+            Console.WriteLine();
+            PrintForeach(fstSeq);
+
         }
     }
 }
+
