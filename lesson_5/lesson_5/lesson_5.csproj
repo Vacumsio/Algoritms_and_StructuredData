@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RightSequence.cs" />
     <Compile Include="StackToBin.cs" />
   </ItemGroup>
   <ItemGroup>
