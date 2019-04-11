@@ -11,23 +11,17 @@ using System.Threading.Tasks;
 */
 namespace lesson_5
 {
-    class Program
+    class MainClass
     {
         static void Main(string[] args)
         {
+            #region 1.Реализовать перевод из десятичной в двоичную систему счисления с использованием стека.
+            StackToBin.ToBin();
 
-            int x = 250; // число для перевода
-            Console.WriteLine(x);
-            var stack = new Stack<int>();
-            while (x > 0)
-            {
-                stack.Push(x % 2);
-                x /= 2;
-            }
-            foreach (int i in stack)
-                Console.Write(i);
+            #endregion
+
+
             Console.ReadKey();
-
         }
     }
 }
