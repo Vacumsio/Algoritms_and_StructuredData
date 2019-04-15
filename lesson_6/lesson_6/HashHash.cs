@@ -38,7 +38,7 @@ namespace lesson_6
             return new Guid(hash);
         }
 
-        public static int StringHashCode20(string value)
+        public static int StringHashCode(string value)
         {
             int num = 352654597;
             int num2 = num;
@@ -63,18 +63,5 @@ namespace lesson_6
             return num + num2 * 1566083941;
         }
 
-        public static int StringHashCode40(string value)
-        {
-            int num = 5381;
-            int num2 = num;
-            for (int i = 0; i < value.Length; i += 2)
-            {
-                num = (((num << 5) + num) ^ value[i]);
-
-                if (i + 1 < value.Length)
-                    num2 = (((num2 << 5) + num2) ^ value[i + 1]);
-            }
-            return num + num2 * 1566083941;
-        }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="HashHash.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="NashTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

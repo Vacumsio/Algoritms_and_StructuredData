@@ -23,8 +23,7 @@ namespace lesson_6
         {
             #region 1.Реализовать простейшую хэш-функцию. На вход функции подается строка, на выходе получается сумма кодов символов.
             string value = "123";
-            Console.WriteLine(HashHash.StringHashCode20(value));
-            Console.WriteLine(HashHash.StringHashCode40(value));
+            Console.WriteLine(HashHash.StringHashCode(value));
             Console.WriteLine(value.GetHashCode());
             Console.WriteLine(HashHash.GetHashString(value));
             #endregion
