@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lesson_6
+namespace lesson_7
 {
-    class NashTree
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
