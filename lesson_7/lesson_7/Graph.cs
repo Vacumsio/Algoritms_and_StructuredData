@@ -1,5 +1,4 @@
 ﻿using System;
-using static GraphInDepth.MainClass;
 
 namespace GraphInDepth
 {
