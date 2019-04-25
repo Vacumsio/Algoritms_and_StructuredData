@@ -15,12 +15,7 @@ namespace lesson_8
             int[] array = NewArray.CreateArray();
             Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
 
-            //foreach (var item in array)
-            //{                
-            //    Console.WriteLine(item);                
-            //}
 
-            Console.ReadKey();
 
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
             Console.WriteLine("BubbleSort");
@@ -28,7 +23,6 @@ namespace lesson_8
             int[] bubbles = Sorts.Bubbles(array);
             Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
-            Console.ReadKey();
             #endregion
 
             #region  2. *Реализовать шейкерную сортировку.
@@ -37,7 +31,6 @@ namespace lesson_8
             int[] sheikers = Sorts.Sheikers(array);
             Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
-            Console.ReadKey();
             #endregion
 
             #region 3. Реализовать бинарный алгоритм поиска в виде функции, которой передаётся отсортированный массив.
@@ -47,6 +40,9 @@ namespace lesson_8
             #region 4. *Подсчитать количество операций для каждой из сортировок и сравнить его с асимптотической сложностью алгоритма.
 
             #endregion
+
+
+            Console.ReadKey();
         }
     }
 }
