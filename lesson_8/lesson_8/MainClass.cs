@@ -43,24 +43,24 @@ namespace lesson_8
 
             //#endregion
 
-            #region QuickSort (Hoars sort)
-            int[] hoars = array;
-            Console.WriteLine("QuickSort-Hoar Sort");
-            date = DateTime.Now;
-            Sorts.QSort(array, out int num);
-            Console.WriteLine("проходы по QuickSort сортировке {0}", num);
-            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
-            Console.WriteLine("\n");
-            #endregion
-
-            //#region ShellSort
-            //int[] shell = array;
-            //Console.WriteLine("Shell Sort");
+            //#region QuickSort (Hoars sort)
+            //int[] hoars = array;
+            //Console.WriteLine("QuickSort-Hoar Sort");
             //date = DateTime.Now;
-            //Sorts.ShellSort(shell);
+            //Sorts.QSort(array, out int num);
+            //Console.WriteLine("проходы по QuickSort сортировке {0}", num);
             //Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             //Console.WriteLine("\n");
             //#endregion
+
+            #region ShellSort
+            int[] shell = array;
+            Console.WriteLine("Shell Sort");
+            date = DateTime.Now;
+            Sorts.ShellSort(shell);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey(); Console.ReadKey(); Console.ReadKey(); Console.ReadKey();
         }
     }

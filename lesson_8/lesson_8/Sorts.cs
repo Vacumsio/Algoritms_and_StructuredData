@@ -73,7 +73,7 @@ namespace lesson_8
         {
             return arr;
         }
-
+        
         /// <summary>
         /// Быстрая сортировка. Сортировка Хоара
         /// </summary>
