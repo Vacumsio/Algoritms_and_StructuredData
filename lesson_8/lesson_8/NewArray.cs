@@ -17,7 +17,7 @@ namespace lesson_8
 
             for (int i = 0; i < n; i++)
             {
-                arr[i] = rand.Next(0, 100);
+                arr[i] = rand.Next(0, 1000);
             }
 
             return arr;

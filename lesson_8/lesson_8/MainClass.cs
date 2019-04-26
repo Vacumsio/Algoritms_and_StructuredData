@@ -20,7 +20,7 @@ namespace lesson_8
             #region 1. Попробовать оптимизировать пузырьковую сортировку.
             Console.WriteLine("BubbleSort");
             date = DateTime.Now;
-            int[] bubbles = Sorts.Bubbles(array);
+            Sorts.Bubbles(array);
             Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
             #endregion
@@ -28,7 +28,7 @@ namespace lesson_8
             #region  2. *Реализовать шейкерную сортировку.
             Console.WriteLine("SheikersSort");
             date = DateTime.Now;
-            int[] sheikers = Sorts.Sheikers(array);
+            Sorts.Sheikers(array);
             Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
             Console.WriteLine("\n");
             #endregion
@@ -41,8 +41,22 @@ namespace lesson_8
 
             #endregion
 
+            #region QuickSort (Hoars sort)
+            Console.WriteLine("QuickSort-Hoar Sort");
+            date = DateTime.Now;
+            Sorts.QSort(array);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
+            Console.WriteLine("\n");
+            #endregion
 
-            Console.ReadKey();
+            #region MyRegion
+            Console.WriteLine("QuickSort-Hoar Sort");
+            date = DateTime.Now;
+            Sorts.ShellSort(array);
+            Console.WriteLine("Время создания массива составляет: {0}\n", date - DateTime.Now);
+            Console.WriteLine("\n");
+            #endregion
+            Console.ReadKey(); Console.ReadKey(); Console.ReadKey(); Console.ReadKey();
         }
     }
 }
