@@ -73,33 +73,33 @@ namespace lesson_8
         {
             return arr;
         }
+
         /// <summary>
         /// Быстрая сортировка. Сортировка Хоара
         /// </summary>
         /// <param name="arr"></param>
         /// <param name="firstIndex"></param>
         /// <param name="lastIndex"></param>
-        public static void QSort(int[] arr, int firstIndex = 0, int lastIndex = -1)
+        public static void QSort(int[] arr, out int count, int firstIndex = 0, int lastIndex = -1)
         {
-            int qso = 0;
+            count = 0;
             if (lastIndex < 0)
                 lastIndex = arr.Length - 1;
             if (firstIndex >= lastIndex)
                 return;
             int middleIndex = (lastIndex - firstIndex) / 2 + firstIndex, currentIndex = firstIndex;
-            Swap(ref arr[firstIndex], ref arr[middleIndex]);
+            Swap(ref arr[firstIndex], ref arr[middleIndex]); count++;
             for (int i = firstIndex + 1; i <= lastIndex; ++i)
             {
-                qso++;
                 if (arr[i] <= arr[firstIndex])
                 {
-                    Swap(ref arr[++currentIndex], ref arr[i]);qso++;
+                    Swap(ref arr[++currentIndex], ref arr[i]); count++;
                 }
             }
               
-            Swap(ref arr[firstIndex], ref arr[currentIndex]);
-            QSort(arr, firstIndex, currentIndex - 1);
-            QSort(arr, currentIndex + 1, lastIndex);
+            Swap(ref arr[firstIndex], ref arr[currentIndex]); count++;
+            QSort(arr, out count, firstIndex, currentIndex - 1);
+            QSort(arr, out count, currentIndex + 1, lastIndex);             
         }
 
         public static void ShellSort(int[] arr)
